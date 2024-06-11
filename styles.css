@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile p {
+    margin: 0;
+    font-size: 1em;
+}
+.food-list {
+    list-style-type: none;
+    padding: 0;
+}
+.food-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.food-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+.food-item p {
+    margin: 0;
+    font-size: 1.2em;
+}
+.food-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#orderFormContainer {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+#orderForm {
+    display: flex;
+    flex-direction: column;
+}
+#orderForm label {
+    margin: 10px 0 5px;
+}
+#orderForm input,
+#orderForm textarea {
+    padding: 10px
+}    

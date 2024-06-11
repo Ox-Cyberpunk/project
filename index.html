@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="images/profile.jpg">
+            <p>Yarr Vanessa </p>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Nessa's Catalog</h1>
+            <p>Enjoy our delicious menu items crafted with love and fresh ingredients.</p>
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>Nessa's Catalog is known for it's exquisite cuisine and exceptional customer service. Our owner, a young and vibrant chef, brings passion and dedication to every delicacy made.Learn more about our story and what makes us unique.</p>
+        </section>
+        <section id="menu">
+        <h1>Our Menu </h1>
+        <ul id="foodList" class="food-list">
+            <li class="food-item" data-food="Banana Bread" data-price="3.00" data-ingredients="Bananas, flour, sugar, eggs, butter, baking soda, salt">
+                <img src="images/banana bread.jpeg" alt="Banana Bread">
+                <p>Banana Bread - $3.00</p>
+            </li>
+            <li class="food-item" data-food="Bento Cakes" data-price="7.00" data-ingredients="Flour, sugar, eggs, butter, vanilla, food coloring">
+                <img src="images/bento cakes.jpeg" alt="Bento Cakes">
+                <p>Bento Cakes - $7.00</p>
+            </li>
+            <li class="food-item" data-food="Butter Icing Cake" data-price="11.00" data-ingredients="Flour, sugar, eggs, butter, milk, vanilla, powdered sugar">
+                <img src="images/butter icing cake.jpeg" alt="Butter Icing Cake">
+                <p>Butter Icing Cake - $11.00</p>
+            </li>
+            <li class="food-item" data-food="Cake Parfait" data-price="3.00" data-ingredients="Cake crumbs, whipped cream, fruits, chocolate sauce">
+                <img src="images/cake parfait.jpeg" alt="Cake Parfait">
+                <p>Cake Parfait - $3.00</p>
+            </li>
+            <li class="food-item" data-food="Chinchin and Peanuts" data-price="1.00" data-ingredients="Flour, sugar, butter, eggs, peanuts, oil">
+                <img src="images/chinchin and peanuts.jpeg" alt="Chinchin and Peanuts">
+                <p>Chinchin and Peanuts - $1.00</p>
+            </li>
+            <li class="food-item" data-food="Fondant Icing Cake" data-price="17.00" data-ingredients="Flour, sugar, eggs, butter, fondant, vanilla">
+                <img src="images/fondant icing cake.jpeg" alt="Fondant Icing Cake">
+                <p>Fondant Icing Cake - $17.00</p>
+            </li>
+            <li class="food-item" data-food="Glazed Doughnuts" data-price="5.00" data-ingredients="Flour, sugar, milk, butter, yeast, eggs, glaze">
+                <img src="images/glazed doughnuts.jpeg" alt="Glazed Doughnuts">
+                <p>Glazed Doughnuts - $5.00</p>
+            </li>
+            <li class="food-item" data-food="Meat Pie" data-price="1.00" data-ingredients="Flour, butter, meat, potatoes, carrots, onions, spices">
+                <img src="images/meatpie.jpeg" alt="Meat Pie">
+                <p>Meat Pie - $1.00</p>
+            </li>
+            <li class="food-item" data-food="Milky Pillow Doughnuts" data-price="3.00" data-ingredients="Flour, sugar, milk, butter, yeast, eggs, filling">
+                <img src="images/milky pillow doughnuts.jpeg" alt="Milky Pillow Doughnuts">
+                <p>Milky Pillow Doughnuts - $3.00</p>
+            </li>
+            <li class="food-item" data-food="Samosa and Puff Puff and Spring Roll" data-price="2.00" data-ingredients="Flour, vegetables, meat, spices, oil">
+                <img src="images/samusa and puff puff and springroll.jpeg" alt="Samosa and Puff Puff and Spring Roll">
+                <p>Samosa and Puff Puff and Spring Roll - $2.00</p>
+            </li>
+            <li class="food-item" data-food="Shawarma" data-price="3.00" data-ingredients="Flatbread, meat, vegetables, sauce">
+                <img src="images/sharwama.jpeg" alt="Shawarma">
+                <p>Shawarma - $3.00</p>
+            </li>
+            <li class="food-item" data-food="Size 6 Cake" data-price="17.00" data-ingredients="Flour, sugar, eggs, butter, vanilla, icing">
+                <img src="images/size 6 cake.jpeg" alt="Size 6 Cake">
+                <p>Size 6 Cake - $17.00</p>
+            </li>
+            <li class="food-item" data-food="Square Cakes" data-price="12.00" data-ingredients="Flour, sugar, eggs, butter, milk, vanilla">
+                <img src="images/square cakes.jpeg" alt="Square Cakes">
+                <p>Square Cakes - $12.00</p>
+            </li>
+        </ul>
+        </section>
+        </main>
+    <div id="orderFormContainer">
+        <h2>Place an Order</h2> 
+        <form id="orderForm">
+            <label for="foodItem">Food Item</label>
+            <input type="text" id="foodItem" name="foodItem">
+            
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price">
+
+            <label for="number of food items">Number</label>
+            <input type="number" id="Number" name="Number">
+        
+            
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName" name="customerName" required>
+            
+            <label for="customerEmail">Your Email</label>
+            <input type="email" id="customerEmail" name="customerEmail" required>
+            
+            <label for="customerPhone">Your Phone Number</label>
+            <input type="tel" id="customerPhone" name="customerPhone" required>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+        <button id="cancelButton">Cancel</button>
+    </div>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>You craving for that special something feel free to reach out to us for any inquiries or to place an order. You can contact us via email or phone, or visit our restaurant in person.</p>
+        <ul>
+            <li>Email:YarrVee@icloud.com</li>
+            <li>phone: (+234) 702 308 7782</li>
+            <li>Address: first street, Judges Palace, Markurdi, Benue state.</li>
+        </ul> 
+    </section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
